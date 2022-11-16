@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { LogoComponent } from './logo/logo.component';
 import { FatherComponent } from './father/father.component';
 import { ChildComponent } from './child/child.component';
+import { ListComponent } from './list/list.component';
+import { ShoesComponent } from './shoes/shoes.component';
+import { AdditemComponent } from './additem/additem.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LogoComponent,
     FatherComponent,
-    ChildComponent
+    ChildComponent,
+    ListComponent,
+    ShoesComponent,
+    AdditemComponent
   ],
   imports: [
     BrowserModule,
