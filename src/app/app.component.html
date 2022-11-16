@@ -1,5 +1,5 @@
-
-  <app-father></app-father>
+<h1 class="myshop">my shop:))</h1>
+  <!-- <app-father></app-father>
 
 <div>
 <app-logo></app-logo>
@@ -8,4 +8,10 @@
 <app-logo></app-logo>
 </div>
 <app-child></app-child>
-<router-outlet></router-outlet>
+<router-outlet></router-outlet> -->
+<h1 class="list">רשימה במלאי</h1>
+<app-list [arrShoes]="arrInStock" [addButtonText]="'הוסף לסל'"  (myAddtoBasketEvent)="addToBasket($event)"></app-list>
+<h1 class="list">רשימה במבצע</h1>
+<app-list [arrShoes]="arrInSale" [addButtonText]="'הוסף לסל'"  (myAddtoBasketEvent)="addToBasket($event)"></app-list>
+<h1 class="list">(: סל הקניות שלי</h1>
+<app-list [arrShoes]="arrBasket" [addButtonText]="'הסר מהסל'"  (myAddtoBasketEvent)="removeFromBasket($event)"></app-list>
