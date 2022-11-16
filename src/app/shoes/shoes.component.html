@@ -1,0 +1,8 @@
+<div>
+    <h2>{{myShoes.company}} :חברה</h2>
+    <h3>{{myShoes.model}} :דגם</h3>
+    <h3>{{myShoes.price}} :מחיר</h3>
+    <h3 *ngIf="myShoes.isHeel">עקב</h3>
+    <h3 *ngIf="myShoes.isHeel">שטוח</h3>
+    <img *ngIf="myShoes.imgUrl" [src]="myShoes.imgUrl"/>
+</div>
