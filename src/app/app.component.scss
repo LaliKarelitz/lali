@@ -1,5 +1,21 @@
-div{
-    display: flex;
-    flex-wrap: nowrap;
-    margin: 60px;
+// div{
+//     display: flex;
+//     flex-wrap: nowrap;
+//     margin: 60px;
+// }
+.list{
+    text-align: center;
+    font-family: sans-serif;
+    box-shadow: 2px 2px 7px palevioletred;
+    width: 30%;
+    margin: auto;
+}
+app-list{
+display: flex;
+}
+.myshop{
+    font-family: sans-serif;
+    font-size: 300%;
+    color: palevioletred;
+    text-align: center;
 }
