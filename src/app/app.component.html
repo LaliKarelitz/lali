@@ -9,9 +9,11 @@
 </div>
 <app-child></app-child>
 <router-outlet></router-outlet> -->
+<h2>הכנס מוצר חדש</h2>
+<app-additem></app-additem>
 <h1 class="list">רשימה במלאי</h1>
-<app-list [arrShoes]="arrInStock" [addButtonText]="'הוסף לסל'"  (myAddtoBasketEvent)="addToBasket($event)"></app-list>
+<app-list [arrShoes]="arrInStock" [arrBasket]="arrBasket" [addButtonText]="'הוסף לסל'"  (myAddtoBasketEvent)="addToBasket($event)"></app-list>
 <h1 class="list">רשימה במבצע</h1>
-<app-list [arrShoes]="arrInSale" [addButtonText]="'הוסף לסל'"  (myAddtoBasketEvent)="addToBasket($event)"></app-list>
+<app-list [arrShoes]="arrInSale" [arrBasket]="arrBasket" [addButtonText]="'הוסף לסל'"  (myAddtoBasketEvent)="addToBasket($event)"></app-list>
 <h1 class="list">(: סל הקניות שלי</h1>
-<app-list [arrShoes]="arrBasket" [addButtonText]="'הסר מהסל'"  (myAddtoBasketEvent)="removeFromBasket($event)"></app-list>
+<app-list [arrShoes]="arrBasket" [arrBasket]="arrBasket" [addButtonText]="'הסר מהסל'"  (myAddtoBasketEvent)="removeFromBasket($event)"></app-list>

@@ -18,7 +18,7 @@ import { AdditemComponent } from './additem/additem.component';
     ChildComponent,
     ListComponent,
     ShoesComponent,
-    AdditemComponent
+    AdditemComponent,
   ],
   imports: [
     BrowserModule,

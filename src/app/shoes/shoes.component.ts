@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import Sheo from 'src/models/Sheo';
 @Component({
   selector: 'app-shoes',

@@ -1,4 +1,5 @@
 <div *ngFor="let item of arrShoes">
-    <app-shoes [myShoes]="item"></app-shoes>
-    <input type="button" [value]="addButtonText" *ngIf="addButtonText" (click)="createEventt(item)" />
+    <app-shoes [myShoes]="item" (eventush)="func($event)"></app-shoes>
+    <input type="button" [value]="addButtonText" *ngIf="addButtonText"
+     (click)="func(item.id)" />
 </div>
